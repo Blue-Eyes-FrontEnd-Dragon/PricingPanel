@@ -1,6 +1,9 @@
 :root {
     --main-bg-color: #60a9ff;
     --panel-bg-color: #fff;
+    --border-default-color: #e1f1ff;
+    --font-heading-color: #888;
+    --font-highlighting-color: #016ff9;
 }
 
 * {
@@ -35,4 +38,52 @@ body {
     padding: 15px 25px;
     width: 100%;
     max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pricing-plan {
+    border-bottom: 1px solid var(--border-default-color);
+} 
+
+.pricing-plan:last-child {
+    border-bottom: none;
+}
+
+.pricing-img {
+    margin: 25px;
+    max-width: 100%;
+}
+
+.pricing-header {
+    color: var(--font-heading-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.pricing-features-item {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 0;
+    border-top: 1px solid var(--border-default-color);
+}
+
+.pricing-features-item:last-child {
+    border-bottom: 1px solid var(--border-default-color);
+}
+
+.pricing-features {
+    margin: 50px 0 25px;
+    color: var(--font-highlighting-color);
+}
+
+.pricing-price {
+    color: var(--font-highlighting-color);
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
 }
