@@ -15,16 +15,24 @@ ol, ul {
     list-style: none;
 }
 
-body {
+html {
     font-family: 'Open Sans', sans-serif;
-    display: flex;
-    justify-content: center;
 }
 
 body {
     background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
 }
 
 .panel {
+    margin: 20px;
     background-color: var(--panel-bg-color);
+    border-radius: 10px;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 960px;
 }
