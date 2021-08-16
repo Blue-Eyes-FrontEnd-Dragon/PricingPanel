@@ -1,5 +1,30 @@
+:root {
+    --main-bg-color: #60a9ff;
+    --panel-bg-color: #fff;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-size: 100%;
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+.panel {
+    background-color: var(--panel-bg-color);
 }
